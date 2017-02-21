@@ -33,4 +33,9 @@
 
     <string name="legion_settings_dash_title">Legion Settings</string> 
     <string name="legion_settings_summary">Customization lab</string>
+
+    <!-- Pocket mode -->
+    <string name="proximity_wake_title">Prevent accidental wake-up</string>
+    <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
+
 </resources>
