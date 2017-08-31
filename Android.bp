@@ -27,7 +27,15 @@ android_library {
         "SettingsLib-search-defaults",
     ],
 
-    srcs: ["src/**/*.java"],
+    srcs: ["src/**/*.java",
+           "LegionSettings/src/**/*.java",
+    ],
+
+    aaptflags: ["--extra-packages com.legion.settings"],
+
+    resource_dirs: ["res",
+                    "LegionSettings/res"
+    ],
 
     static_libs: [
         "androidx-constraintlayout_constraintlayout",
@@ -63,10 +71,9 @@ android_library {
         "app-compat-annotations",
     ],
 
-    resource_dirs: [
-	"res-legion",
-        "res",
-    ],
+    optimize: {
+        proguard_flags_files: ["proguard-core.flags"],
+    },
 }
 
 platform_compat_config {

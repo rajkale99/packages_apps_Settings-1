@@ -31,6 +31,6 @@
     <string name="selinux_status_permissive">Permissive</string> 
     <string name="selinux_status_enforcing">Enforcing</string>
 
-    <string name="legion_settings_title">Legion Settings</string> 
+    <string name="legion_settings_dash_title">Legion Settings</string> 
     <string name="legion_settings_summary">Customization lab</string>
 </resources>
