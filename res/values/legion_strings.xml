@@ -131,4 +131,10 @@
     <string name="pattern_custom">Custom</string>
     <string name="custom_vibration_pattern_title">Custom pattern</string>
 
+
+    <string name="update_settings_title">LegionOS Updater</string>
+    <string name="update_settings_summary">Check for the latest version of the rom</string> 
+    <string name="update_package" translatable="false">org.lineageos.updater</string> 
+    <string name="update_activity" translatable="false">org.lineageos.updater.UpdatesActivity</string>
+
 </resources>
