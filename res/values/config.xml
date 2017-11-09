@@ -420,4 +420,6 @@
 
     <!-- RTT setting intent action -->
     <string name="config_rtt_setting_intent_action" translatable="false"></string>
+
+    <string name="config_customDozePackage" translatable="false"></string>
 </resources>
