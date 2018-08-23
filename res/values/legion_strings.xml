@@ -112,4 +112,9 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">Locate the fingerprint sensor on the <xliff:g id="sensor_location">%1$s</xliff:g> of your tablet.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="device">Locate the fingerprint sensor on the <xliff:g id="sensor_location">%1$s</xliff:g> of your device.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm"  product="default">Locate the fingerprint sensor on the <xliff:g id="sensor_location">%1$s</xliff:g> of your phone.</string>
+
+    <!-- Custom light color -->
+    <string name="custom_light_title">Light color</string>
+    <string name="custom_light_on_time_title">Light pulse duration</string>
+    <string name="custom_light_off_time_title">Light pulse interval</string>
 </resources>
