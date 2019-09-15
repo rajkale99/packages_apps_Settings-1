@@ -314,4 +314,7 @@
     <string name="small_label">1 dp</string>
     <string name="big_label">4 dp</string>
 
+	<!-- Themes customisation -->
+    <string name="theme_customization_systemui_title">System themes</string>
+
 </resources>
