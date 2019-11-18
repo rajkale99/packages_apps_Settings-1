@@ -117,4 +117,8 @@
     <string name="custom_light_title">Light color</string>
     <string name="custom_light_on_time_title">Light pulse duration</string>
     <string name="custom_light_off_time_title">Light pulse interval</string>
+
+    <!-- Back gesture animation -->
+    <string name="back_gesture_arrow_message">Show an animated arrow for back gesture.</string>
+
 </resources>
