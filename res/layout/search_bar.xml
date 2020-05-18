@@ -28,14 +28,16 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@drawable/search_bar_selected_background"
-        android:contentInsetStartWithNavigation="64dp"
-        android:navigationIcon="@drawable/ic_homepage_search">
+        android:contentInsetStartWithNavigation="64dp" />
         <TextView
             android:id="@+id/search_action_bar_title"
             style="@style/TextAppearance.SearchBar"
 	    android:alpha="0.8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+	    android:textStyle="bold"
+	    android:textColor="ff353535"
+	    android:layout_gravity="center"
             android:text="@string/search_menu"/>
     </Toolbar>
     <ImageView
