@@ -274,6 +274,9 @@
     <style name="TextAppearance.SearchBar"
            parent="@*android:style/TextAppearance.DeviceDefault.Widget.Toolbar.Subtitle">
         <item name="android:textSize">@dimen/search_bar_text_size</item>
+	<item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff353535</item>
+        <item name="android:layout_gravity">center</item>
     </style>
 
     <style name="TextAppearance.ConditionCardTitle"
@@ -426,8 +429,8 @@
     </style>
 
     <style name="SearchBarStyle">
-        <item name="android:layout_margin">16dp</item>
-        <item name="cardCornerRadius">18dp</item>
+        <item name="android:layout_margin">@dimen/search_bar_margin</item>
+        <item name="cardCornerRadius">@*android:dimen/config_dialogCornerRadius</item>
         <item name="enforceMaterialTheme">true</item>
         <item name="cardElevation">0dp</item>
         <item name="shapeAppearance">@null</item>
@@ -657,9 +660,9 @@
            parent="@style/AccessibilityDialogButton"></style>
 
     <style name="homepage_spacer_title_style">
-        <item name="android:textSize">40sp</item>
-        <item name="android:textColor">?android:attr/textColorPrimary</item>
-        <item name="android:fontFamily">google-sans-medium</item>
+	<item name="android:textSize">40sp</item>
+	<item name="android:textColor">"@*android:color/accent_device_default_light"</item>
+        <item name="android:fontFamily">Dumbledor</item>
     </style>
 
 </resources>
