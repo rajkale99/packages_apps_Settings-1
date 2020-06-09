@@ -28,8 +28,9 @@
     <color name="notification_importance_button_selected">#AECBFA</color> <!-- material blue 200 -->
     <color name="notification_importance_button_unselected">#5F6368</color>
     <color name="face_intro_outline">?android:attr/colorAccent</color>
-
     <color name="settings_panel_background_color">#202124</color> <!-- GM2_grey_900 -->
 
+    <!-- Dashboard Icon background  -->
+    <color name="homepage_generic_icon_background">#301a73e8</color>
 </resources>
 

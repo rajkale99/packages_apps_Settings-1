@@ -119,7 +119,7 @@
     <dimen name="search_bar_text_size">16dp</dimen>
     <dimen name="search_bar_card_elevation">3dp</dimen>
     <dimen name="search_bar_content_inset">64dp</dimen>
-    <dimen name="search_bar_avatar_end_padding">16dp</dimen>
+    <dimen name="search_bar_avatar_end_padding">8dp</dimen>
     <!-- 32dp (avatar size) + 16 dp (search_bar_avatar_end_padding) -->
     <dimen name="search_bar_avatar_width">48dp</dimen>
     <!-- (search_bar_height 48dp - avatar size 32dp) / 2  -->
@@ -430,6 +430,5 @@
     <dimen name="homepage_logo_size">50dp</dimen>
     <dimen name="homepage_spacer_imageview_marginBottom">10dp</dimen>
     <dimen name="homepage_spacer_title_marginTop">50dp</dimen>
-
     <dimen name="config_dialogCornerRadius">25dp</dimen>
 </resources>

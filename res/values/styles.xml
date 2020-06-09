@@ -430,7 +430,7 @@
 
     <style name="SearchBarStyle">
         <item name="android:layout_margin">@dimen/search_bar_margin</item>
-        <item name="cardCornerRadius">@dimen/config_dialogCornerRadius</item>
+        <item name="cardCornerRadius">@*android:dimen/config_dialogCornerRadius</item>
         <item name="enforceMaterialTheme">true</item>
         <item name="cardElevation">0dp</item>
         <item name="shapeAppearance">@null</item>
@@ -662,7 +662,7 @@
     <style name="homepage_spacer_title_style">
 	<item name="android:textSize">40sp</item>
 	<item name="android:textColor">@*android:color/accent_device_default_light</item>
-        <item name="android:fontFamily">Dumbledor</item>
+        <item name="android:fontFamily">Neoneon</item>
     </style>
 
 </resources>
