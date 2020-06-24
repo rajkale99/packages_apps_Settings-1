@@ -29,7 +29,7 @@ import com.android.settingslib.core.lifecycle.Lifecycle;
 import com.android.settingslib.core.lifecycle.LifecycleObserver;
 import com.android.settingslib.core.lifecycle.events.OnResume;
 
-import com.havoc.support.colorpicker.ColorPickerPreference;
+import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
 public class CustomLightsPreferenceController extends NotificationPreferenceController
         implements PreferenceControllerMixin, Preference.OnPreferenceChangeListener {
