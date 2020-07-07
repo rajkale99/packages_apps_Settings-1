@@ -61,8 +61,8 @@
 
     <string name="update_settings_title">LegionOS Updater</string>
     <string name="update_settings_summary">Check for the latest version of the rom</string> 
-    <string name="update_package" translatable="false">org.lineageos.updater</string> 
-    <string name="update_activity" translatable="false">org.lineageos.updater.UpdatesActivity</string>
+    <string name="update_package" translatable="false">com.legion.updater</string> 
+    <string name="update_activity" translatable="false">com.legion.updater.UpdatesActivity</string>
 
     <string name="smart_charging_title">Smart Charging</string>
     <string name="smart_charging_summary">Set maximum charging level</string>
