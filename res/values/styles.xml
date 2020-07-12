@@ -662,7 +662,7 @@
     <style name="homepage_spacer_title_style">
 	<item name="android:textSize">40sp</item>
 	<item name="android:textColor">@*android:color/accent_device_default_light</item>
-        <item name="android:fontFamily">Neoneon</item>
+        <item name="android:fontFamily">Dumbledor</item>
     </style>
 
 </resources>
