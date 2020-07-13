@@ -29,7 +29,6 @@ import androidx.preference.Preference;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.Utils;
 import com.android.settings.applications.AppStorageSettings;
 import com.android.settings.applications.FetchPackageStorageAsyncLoader;
 import com.android.settingslib.applications.ApplicationsState;
@@ -84,7 +83,7 @@ public class AppStoragePreferenceController extends AppInfoPreferenceControllerB
                 : R.string.storage_type_internal);
         return mContext.getString(R.string.storage_summary_format,
                 Formatter.formatFileSize(mContext, stats.getTotalBytes()),
-                Utils.normalizeTitleCaseIfRequired(mContext, storageType.toString()));
+                storageType.toString().toLowerCase());
     }
 
     @Override
