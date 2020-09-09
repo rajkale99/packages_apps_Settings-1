@@ -28,7 +28,6 @@ import android.content.res.TypedArray;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.provider.Settings;
 import android.util.ArraySet;
 import android.util.Log;
 import android.view.LayoutInflater;
