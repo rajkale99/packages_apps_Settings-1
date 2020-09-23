@@ -333,8 +333,6 @@ public class AccessibilitySettings extends DashboardFragment {
         mDisplayMagnificationPreferenceScreen = findPreference(
                 DISPLAY_MAGNIFICATION_PREFERENCE_SCREEN);
 
-        // Display color adjustments.
-        mDisplayDaltonizerPreferenceScreen = findPreference(DISPLAY_DALTONIZER_PREFERENCE_SCREEN);
     }
 
     private void updateAllPreferences() {
