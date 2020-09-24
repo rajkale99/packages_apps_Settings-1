@@ -61,7 +61,6 @@
     <string name="theme_type_dark_grey">Dark Grey</string>
     <string name="theme_type_du_pitchblack">Pitch black</string> 
     <string name="theme_type_material_ocean">Material Ocean</string>
-    <string name="theme_type_xtended_clear">Xtended Clear</string>
 
     <!-- GVM -->
     <string name="theme_customization_statusbar_height_title">Statusbar height</string>
