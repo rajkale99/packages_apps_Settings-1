@@ -39,8 +39,8 @@
         settings:controller="com.android.settings.connecteddevice.TopLevelConnectedDevicesPreferenceController"/>
 
     <Preference
-	android:key="legion_settings" 
-        android:title="@string/legion_settings_title" 
+	android:key="top_level_legion_settings" 
+        android:title="@string/legion_settings_dash_title" 
         android:summary="@string/legion_settings_summary" 
         android:icon="@drawable/ic_homepage_legion" 
         android:order="-105"
