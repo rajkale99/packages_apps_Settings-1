@@ -95,8 +95,8 @@ public class AccessibilitySettings extends DashboardFragment {
     private static final String TOGGLE_DISABLE_ANIMATIONS = "toggle_disable_animations";
     private static final String DISPLAY_MAGNIFICATION_PREFERENCE_SCREEN =
             "magnification_preference_screen";
-/*    private static final String DISPLAY_DALTONIZER_PREFERENCE_SCREEN =
-            "daltonizer_preference";*/
+    private static final String DISPLAY_DALTONIZER_PREFERENCE_SCREEN =
+            "daltonizer_preference";
 
     // Extras passed to sub-fragments.
     static final String EXTRA_PREFERENCE_KEY = "preference_key";
@@ -333,6 +333,8 @@ public class AccessibilitySettings extends DashboardFragment {
         mDisplayMagnificationPreferenceScreen = findPreference(
                 DISPLAY_MAGNIFICATION_PREFERENCE_SCREEN);
 
+        // Display color adjustments.
+	mDisplayDaltonizerPreferenceScreen = findPreference(DISPLAY_DALTONIZER_PREFERENCE_SCREEN);
     }
 
     private void updateAllPreferences() {
