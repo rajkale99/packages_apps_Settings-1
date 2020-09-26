@@ -121,6 +121,10 @@
     <string name="update_package" translatable="false">org.lineageos.updater</string> 
     <string name="update_activity" translatable="false">org.lineageos.updater.UpdatesActivity</string>
 
+    <!-- Firmware Information -->
+    <string name="firmware_information">Firmware information</string>
+    <string name="firmware_information_summary">Information about system firmware</string>
+
     <!-- SELinux status -->
     <string name="selinux_status">SELinux status</string>
     <string name="selinux_status_disabled">Disabled</string>
