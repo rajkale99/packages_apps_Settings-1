@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+?<?xml version="1.0" encoding="utf-8"?>
 <!--
   Copyright (C) 2019 The Android Open Source Project
 
@@ -34,11 +34,16 @@
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.LegionVersionPreferenceController"/>
 
-    <!-- Android version -->
     <Preference 
-        android:key="os_firmware_version" 
-        android:title="@string/firmware_version" 
-        android:summary="@string/summary_placeholder" 
+        android:layout="@layout/legion_cardview_divider" 
+        android:selectable="false"/>   
+
+    <!-- Android version -->
+    <Preference
+        android:key="os_firmware_version"
+        android:layout="@layout/legion_cardview_top"
+        android:title="@string/firmware_version"
+        android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
 	settings:searchable="false" 
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
@@ -48,65 +53,64 @@
         android:key="build_date"
         android:title="@string/build_date"
         android:summary="@string/build_date_default"
+        android:layout="@layout/legion_cardview_single"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.BuildDatePreferenceController"/>
 
     <!-- Security patch -->
     <Preference
         android:key="security_key"
+        android:layout="@layout/legion_cardview"
         android:title="@string/security_patch"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.SecurityPatchLevelPreferenceController"/>
 
+    <!-- Build -->
+    <Preference
+        android:key="os_build_number"
+        android:layout="@layout/legion_cardview_bottom"
+        android:title="@string/build_number"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.SimpleBuildNumberPreferenceController"/>
+
+    <Preference 
+        android:layout="@layout/legion_cardview_divider" 
+        android:selectable="false"/>   
+
+    <!-- Device name 
+    <Preference
+        android:key="about_device_name"
+        android:title="@string/about_device_name"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.AboutDeviceNamePreferenceController"/>-->
+
+    <!-- Mainline module version 
+    <Preference
+        android:key="module_version"
+        android:layout="@layout/legion_cardview_top"
+        android:title="@string/module_version"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.MainlineModuleVersionPreferenceController"/>-->
+
     <!-- Baseband -->
     <Preference
         android:key="base_band"
+        android:layout="@layout/legion_cardview_top"
         android:title="@string/baseband_version"
         android:summary="@string/summary_placeholder"
-        android:selectable="false"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.BasebandVersionPreferenceController"/>
 
     <!-- Kernel -->
     <Preference
         android:key="kernel_version"
+        android:layout="@layout/legion_cardview_bottom"
         android:title="@string/kernel_version"
         android:summary="@string/summary_placeholder"
-        android:selectable="false"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.KernelVersionPreferenceController"/>
-
-    <!-- CPU version -->
-    <Preference
-        android:key="cpu_name"
-        android:title="@string/cpu_name" 
-        android:summary="@string/summary_placeholder" 
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.cpunamePreferenceController"/>
-
-    <!-- Maintainer Name -->
-    <Preference
-        android:key="maintainer_name"
-        android:title="@string/maintainer_name"
-        android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
-	settings:controller="com.android.settings.deviceinfo.firmwareversion.maintainernamePreferenceController"/>
-
-    <!-- SELinux -->
-    <Preference
-        android:key="selinux_status"
-        android:title="@string/selinux_status"
-        android:summary="@string/summary_placeholder"
-        settings:enableCopying="false"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.SelinuxStatusPreferenceController"/>
-
-    <!-- Build -->
-    <Preference
-        android:key="os_build_number"
-        android:title="@string/build_number"
-        android:summary="@string/summary_placeholder"
-        android:selectable="false"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.SimpleBuildNumberPreferenceController"/>
 
 </PreferenceScreen>
