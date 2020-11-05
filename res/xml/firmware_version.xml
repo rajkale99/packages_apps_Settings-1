@@ -29,60 +29,72 @@
     <!-- legion version -->
     <Preference
         android:key="legion_version"
+        android:layout="@layout/legion_cardview_top"
         android:title="@string/legion_version"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.LegionVersionPreferenceController"/>
 
-    <!-- Android version -->
-    <Preference 
-        android:key="os_firmware_version" 
-        android:title="@string/firmware_version" 
-        android:summary="@string/summary_placeholder" 
-        settings:enableCopying="true"
-	settings:searchable="false" 
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
-
     <!-- Build date -->
     <Preference
         android:key="build_date"
+        android:layout="@layout/legion_cardview_bottom"
         android:title="@string/build_date"
         android:summary="@string/build_date_default"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.BuildDatePreferenceController"/>
 
+    <Preference 
+        android:layout="@layout/legion_cardview_divider" 
+        android:selectable="false"/>   
+
+    <!-- Android version -->
+    <Preference
+        android:key="os_firmware_version"
+        android:layout="@layout/legion_cardview_top"
+        android:title="@string/firmware_version"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+	settings:searchable="false" 
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
+
     <!-- Security patch -->
     <Preference
         android:key="security_key"
+        android:layout="@layout/legion_cardview"
         android:title="@string/security_patch"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.SecurityPatchLevelPreferenceController"/>
 
+    <!-- Build -->
+    <Preference
+        android:key="os_build_number"
+        android:layout="@layout/legion_cardview_bottom"
+        android:title="@string/build_number"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.SimpleBuildNumberPreferenceController"/>
+
+    <Preference 
+        android:layout="@layout/legion_cardview_divider" 
+        android:selectable="false"/>   
+
     <!-- Baseband -->
     <Preference
         android:key="base_band"
+        android:layout="@layout/legion_cardview_top"
         android:title="@string/baseband_version"
         android:summary="@string/summary_placeholder"
-        android:selectable="false"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.BasebandVersionPreferenceController"/>
 
     <!-- Kernel -->
     <Preference
         android:key="kernel_version"
+        android:layout="@layout/legion_cardview_bottom"
         android:title="@string/kernel_version"
         android:summary="@string/summary_placeholder"
-        android:selectable="false"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.KernelVersionPreferenceController"/>
-
-    <!-- Build -->
-    <!--Preference
-        android:key="os_build_number"
-        android:title="@string/build_number"
-        android:summary="@string/summary_placeholder"
-        android:selectable="false"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.SimpleBuildNumberPreferenceController"/> -->
 
 </PreferenceScreen>
