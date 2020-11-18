@@ -104,7 +104,7 @@
     <dimen name="caption_preview_text_size">48dp</dimen>
 
     <!-- ActionBar height -->
-    <dimen name="actionbar_size">56dip</dimen>
+    <dimen name="actionbar_size">72dip</dimen>
 
     <!-- ActionBar contentInsetStart -->
     <dimen name="actionbar_contentInsetStart">16dp</dimen>
@@ -127,11 +127,11 @@
     <dimen name="switchbar_subsettings_margin_end">16dp</dimen>
 
     <dimen name="search_bar_margin">16dp</dimen>
-
+    <dimen name="SearchBarCardCornerRadius">25dp</dimen>
     <dimen name="search_bar_height">48dp</dimen>
     <dimen name="search_bar_corner_radius">8dp</dimen>
     <dimen name="search_bar_text_size">16dp</dimen>
-    <dimen name="search_bar_card_elevation">2dp</dimen>
+    <dimen name="search_bar_card_elevation">3dp</dimen>
     <dimen name="search_bar_content_inset">64dp</dimen>
     <dimen name="search_bar_avatar_end_padding">16dp</dimen>
     <!-- 32dp (avatar size) + 16 dp (search_bar_avatar_end_padding) -->
