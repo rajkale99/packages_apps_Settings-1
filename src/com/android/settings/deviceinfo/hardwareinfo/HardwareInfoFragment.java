@@ -27,6 +27,7 @@ import com.android.settingslib.search.Indexable;
 import com.android.settingslib.search.SearchIndexable;
 import com.android.settings.deviceinfo.imei.ImeiInfoPreferenceController;
 import com.android.settings.deviceinfo.simstatus.SimStatusPreferenceController;
+import com.android.settings.deviceinfo.WifiMacAddressPreferenceController;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.lifecycle.Lifecycle;
 
@@ -78,6 +79,7 @@ public class HardwareInfoFragment extends DashboardFragment {
             Context context, HardwareInfoFragment fragment, Lifecycle lifecycle) {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
         controllers.add(new SimStatusPreferenceController(context, fragment));
+        controllers.add(new WifiMacAddressPreferenceController(context, lifecycle));
         return controllers;
     }
 }
