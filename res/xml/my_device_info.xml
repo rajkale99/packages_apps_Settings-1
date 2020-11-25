@@ -34,33 +34,28 @@
         android:selectable="false"
         settings:controller="com.android.settings.deviceinfo.InternalPreferenceController"/>
 
-    <!-- Device name -->
-    <com.android.settings.widget.ValidatedEditTextPreference
-        android:key="device_name"
+    <!-- Maintainer Name -->
+    <Preference
+        android:key="maintainer_name"
         android:layout="@layout/legion_cardview_top"
-        android:title="@string/legion_device_owner_name"
+        android:title="@string/maintainer_name"
         android:summary="@string/summary_placeholder"
-        settings:controller="com.android.settings.deviceinfo.DeviceNamePreferenceController"
-        settings:enableCopying="true"/>
+        settings:enableCopying="true"
+	settings:controller="com.android.settings.deviceinfo.firmwareversion.maintainernamePreferenceController"/>
 
-    <!-- Account name -->
+
+    <!-- legion version -->
     <Preference
-        android:key="branded_account"
-        android:layout="@layout/legion_cardview"
-        android:title="@string/my_device_info_account_preference_title"
-        android:summary="@string/summary_placeholder"
-        settings:controller="com.android.settings.deviceinfo.BrandedAccountPreferenceController"/>
-    
-    <Preference
-        android:key="emergency_info"
+        android:key="legion_version"
         android:layout="@layout/legion_cardview_bottom"
-        android:title="@string/emergency_info_title"
+        android:title="@string/legion_version"
         android:summary="@string/summary_placeholder"
-        settings:controller="com.android.settings.accounts.EmergencyInfoPreferenceController"/>
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.LegionVersionPreferenceController"/>
 
-    <Preference 
-        android:layout="@layout/legion_cardview_divider" 
-        android:selectable="false"/>    
+    <Preference
+        android:layout="@layout/legion_cardview_divider"
+        android:selectable="false"/>
 
     <!-- Phone number -->
     <Preference
@@ -148,6 +143,25 @@
         android:order="52"
         android:title="@string/fcc_equipment_id"
         android:summary="@string/summary_placeholder"/> -->
+
+    <!-- Account name -->
+    <Preference
+        android:key="branded_account"
+        android:layout="@layout/legion_cardview"
+        android:title="@string/my_device_info_account_preference_title"
+        android:summary="@string/summary_placeholder"
+        settings:controller="com.android.settings.deviceinfo.BrandedAccountPreferenceController"/>
+
+    <Preference
+        android:key="emergency_info"
+        android:layout="@layout/legion_cardview_bottom"
+        android:title="@string/emergency_info_title"
+        android:summary="@string/summary_placeholder"
+        settings:controller="com.android.settings.accounts.EmergencyInfoPreferenceController"/>
+
+    <Preference
+        android:layout="@layout/legion_cardview_divider"
+        android:selectable="false"/>
 
     <!-- Build number -->
     <Preference
