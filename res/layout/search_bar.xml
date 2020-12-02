@@ -22,7 +22,7 @@
     style="@style/SearchBarStyle"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:cardElevation="3dp">
+    app:layout_scrollFlags="scroll|enterAlways">
     <ImageView
         android:src="@drawable/cardview_search_background"
         android:layout_width="match_parent"
@@ -32,13 +32,13 @@
         android:id="@+id/search_action_bar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/search_bar_height"
+        android:layout_marginStart="-2dp"
         android:background="@drawable/search_bar_selected_background"
         android:contentInsetStartWithNavigation="@dimen/search_bar_content_inset"
         android:navigationIcon="@drawable/ic_homepage_search">
         <TextView
             android:id="@+id/search_action_bar_title"
             style="@style/TextAppearance.SearchBar"
-	    android:alpha="0.8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/search_menu"/>
