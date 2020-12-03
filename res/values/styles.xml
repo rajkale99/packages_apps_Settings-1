@@ -481,9 +481,9 @@
 
     <style name="SearchBarStyle">
         <item name="android:layout_margin">@dimen/search_bar_margin</item>
-        <item name="cardCornerRadius">32dp</item>
+        <item name="cardCornerRadius">@*android:dimen/config_dialogCornerRadius</item>
         <item name="enforceMaterialTheme">true</item>
-        <item name="cardElevation">@null</item>
+        <item name="cardElevation">3dp</item>
         <item name="shapeAppearance">@null</item>
     </style>
 
@@ -744,7 +744,7 @@
     </style>
 
     <style name="homepage_spacer_title_style">
-        <item name="android:textSize">48sp</item>
+        <item name="android:textSize">40sp</item>
         <item name="android:textColor">?android:attr/textColorPrimary</item>
         <item name="android:fontFamily">google-sans-regular</item>
     </style>
@@ -793,5 +793,4 @@
            parent="@*android:style/TextAppearance.DeviceDefault.Subhead">
         <item name="android:fontFamily">@*android:string/config_headlineFontFamily</item>
     </style>
-
 </resources>
