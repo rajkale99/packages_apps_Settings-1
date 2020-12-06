@@ -36,8 +36,6 @@ import com.android.settings.deviceinfo.FeedbackPreferenceController;
 import com.android.settings.deviceinfo.IpAddressPreferenceController;
 import com.android.settings.deviceinfo.ManualPreferenceController;
 import com.android.settings.deviceinfo.UptimePreferenceController;
-import com.android.settings.deviceinfo.UpdatePreferenceController;
-import com.android.settings.deviceinfo.SELinuxStatusPreferenceController;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.widget.EntityHeaderController;
 import com.android.settingslib.core.AbstractPreferenceController;

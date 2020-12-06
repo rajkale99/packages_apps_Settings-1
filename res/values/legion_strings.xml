@@ -156,10 +156,4 @@
     <string name="legion_maintainer">Maintainer</string>
     <string name="legion_maintainer_name">Unknown</string>
 
-    <string name="firmware_information">Firmware info</string>
-    <string name="firmware_information_summary">Information about system firmware</string>
-    <string name="hardware_information">Hardware info</string>
-    <string name="hardware_information_summary">Information about hardware</string>
-    <string name="platform_revision">Platform</string>
-    <string name="total_ram">RAM</string>
 </resources>
