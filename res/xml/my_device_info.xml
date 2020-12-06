@@ -117,6 +117,35 @@
         <intent android:action="android.settings.SHOW_SAFETY_AND_REGULATORY_INFO"/>
     </Preference> -->
 
+    <!-- Wi-Fi MAC address -->
+    <Preference
+        android:key="saved_accesspoints_wifi_mac_address"
+        android:layout="@layout/legion_cardview_top"
+        android:title="@string/status_wifi_mac_address"
+        android:summary="@string/view_saved_network"
+        android:fragment="com.android.settings.wifi.savedaccesspoints.SavedAccessPointsWifiSettings"
+        settings:enableCopying="false"/>
+
+    <!-- Factory Wi-Fi MAC address -->
+    <Preference
+        android:key="wifi_mac_address"
+        android:layout="@layout/legion_cardview"
+        android:title="@string/status_device_wifi_mac_address"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"/>
+
+    <!--IP address -->
+    <Preference
+        android:key="wifi_ip_address"
+        android:layout="@layout/legion_cardview_bottom"
+        android:title="@string/wifi_ip_address"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"/>
+
+    <Preference 
+        android:layout="@layout/legion_cardview_divider" 
+        android:selectable="false"/>    
+
     <!-- Bluetooth address
     <Preference
         android:key="bt_address"
