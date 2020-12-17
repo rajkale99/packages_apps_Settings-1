@@ -155,4 +155,6 @@
     <string name="legion_maintainer">Maintainer</string>
     <string name="legion_maintainer_name">Unknown</string>
 
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <string name="connected_tws_device_saved_title">Saved Earbuds</string>
 </resources>
