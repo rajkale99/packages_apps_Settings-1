@@ -35,6 +35,15 @@
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.LegionVersionPreferenceController"/>
 
+    <!-- Maintainer Name -->
+    <Preference
+        android:key="maintainer_name"
+        android:layout="@layout/legion_cardview"
+        android:title="@string/maintainer_name"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+	settings:controller="com.android.settings.deviceinfo.firmwareversion.maintainernamePreferenceController"/>
+
     <!-- Build date -->
     <Preference
         android:key="build_date"

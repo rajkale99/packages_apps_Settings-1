@@ -157,4 +157,10 @@
 
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">Saved Earbuds</string>
+
+    <!-- About Phone screen, Maintainer Name -->
+    <string name="maintainer_name">Maintainer</string>
+    <string name="maintainer_name_default">Unknown</string>
+    <string name="keywords_maintainer_name">Maintainer Name</string>
+
 </resources>
