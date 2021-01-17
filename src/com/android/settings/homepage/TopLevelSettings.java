@@ -49,7 +49,7 @@ public class TopLevelSettings extends DashboardFragment implements
 
     @Override
     protected int getPreferenceScreenResId() {
-        return R.xml.top_level_settings_wave;
+        return R.xml.top_level_settings_legion;
     }
 
     @Override
@@ -98,7 +98,7 @@ public class TopLevelSettings extends DashboardFragment implements
     }
 
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-            new BaseSearchIndexProvider(R.xml.top_level_settings_wave) {
+            new BaseSearchIndexProvider(R.xml.top_level_settings_legion) {
 
                 @Override
                 protected boolean isPageSearchEnabled(Context context) {

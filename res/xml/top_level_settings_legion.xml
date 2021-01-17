@@ -19,7 +19,7 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:key="top_level_settings_wave">
+    android:key="top_level_settings_legion">
 
     <Preference
         android:key="top_level_network"
@@ -38,6 +38,14 @@
         android:order="-150"
         android:fragment="com.android.settings.connecteddevice.ConnectedDeviceDashboardFragment"
         settings:controller="com.android.settings.connecteddevice.TopLevelConnectedDevicesPreferenceController"/>
+
+    <Preference
+        android:key="top_level_legion_settings"
+        android:title="@string/legion_settings_dash_title"
+        android:summary="@string/legion_settings_summary"
+        android:icon="@drawable/ic_homepage_legion"
+        android:order="-148"
+        android:fragment="com.legion.settings.LegionSettings" />
 
     <com.android.settings.ui.TopLevelPreferenceDivider
         android:key="top_level_divider_one"

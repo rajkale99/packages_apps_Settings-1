@@ -20,7 +20,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/settings_homepage_container"
-    android:background="@color/wave_homepage_background"
+    android:background="@color/legion_homepage_background"
     android:fitsSystemWindows="true"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -37,9 +37,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
-            <include layout="@layout/wave_settings_header"/>
-            <include layout="@layout/wave_search_layout"/>
 
             <FrameLayout
                 android:id="@+id/contextual_cards_content"

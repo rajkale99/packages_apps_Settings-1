@@ -2,4 +2,9 @@
 
     <color name="legion_cardview">#212121</color>
 
+    <!-- Settings Homepage Stupidity -->
+    <color name="legion_homepage_background">#ff000000</color>
+    <color name="legion_homepage_icon_background">#ff202124</color>
+    <color name="tl_preference_divider_bg">#ff202124</color>
+
 </resources>

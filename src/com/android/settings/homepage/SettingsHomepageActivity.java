@@ -73,9 +73,9 @@ public class SettingsHomepageActivity extends FragmentActivity {
 
         mUserManager = context.getSystemService(UserManager.class);
 
-        final View view = findViewById(R.id.search_layout);
+        final Toolbar toolbar = findViewById(R.id.search_action_bar);
         FeatureFactory.getFactory(this).getSearchFeatureProvider()
-                .initSearchLayout(this /* activity */, view, SettingsEnums.SETTINGS_HOMEPAGE);
+                .initSearchToolbar(this /* activity */, toolbar, SettingsEnums.SETTINGS_HOMEPAGE);
 
         getLifecycle().addObserver(new HideNonSystemOverlayMixin(this));
 
