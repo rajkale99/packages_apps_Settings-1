@@ -17,7 +17,6 @@
         <com.android.settingslib.widget.AdaptiveIconShapeDrawable
             android:width="@dimen/dashboard_tile_image_size"
             android:height="@dimen/dashboard_tile_image_size"
-            android:color="@color/homepage_display_background" />
             android:color="@color/legion_homepage_icon_background" />
     </item>
 
