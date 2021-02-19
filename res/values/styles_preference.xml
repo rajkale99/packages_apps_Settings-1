@@ -30,6 +30,7 @@
         <item name="preferenceCategoryStyle">@style/SettingsCategoryPreference</item>
         <!-- For preference category color -->
         <item name="preferenceCategoryTitleTextColor">?android:attr/textColorSecondary</item>
+
         <item name="preferenceFragmentCompatStyle">@style/SettingsPreferenceFragmentStyle</item>
     </style>
 
