@@ -111,15 +111,13 @@ public class BatteryMeterView extends CardView {
         layout.addView(linearLayout);
         addView(layout);
         setRadius(getLayoutParams().height);
-		final int frameColor = context.getColor(R.color.meter_background_color);
-        mAccentColorFilter = new PorterDuffColorFilter(
-                Utils.getColorAttrDefaultColor(context, android.R.attr.colorAccent),
-                PorterDuff.Mode.SRC);
-        mErrorColorFilter = new PorterDuffColorFilter(
-                context.getColor(R.color.battery_icon_color_error), PorterDuff.Mode.SRC_IN);
-        mForegroundColorFilter = new PorterDuffColorFilter(
-                Utils.getColorAttrDefaultColor(context, android.R.attr.colorForeground),
-                PorterDuff.Mode.SRC);
+        final int frameColor = context.getColor(R.color.meter_background_color);
+        mAccentColorFilter = Utils.getAlphaInvariantColorFilterForColor(
+                Utils.getColorAttrDefaultColor(context, android.R.attr.colorAccent));
+        mErrorColorFilter = Utils.getAlphaInvariantColorFilterForColor(
+                context.getColor(R.color.battery_icon_color_error));
+        mForegroundColorFilter = Utils.getAlphaInvariantColorFilterForColor(
+                Utils.getColorAttrDefaultColor(context, android.R.attr.colorForeground));
         mDrawable = new BatteryMeterDrawable(context, frameColor);
         mDrawable.setColorFilter(mAccentColorFilter);
     }
