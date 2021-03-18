@@ -237,7 +237,8 @@ public class BatteryInfo {
         info.isOverheated = batteryBroadcast.getIntExtra(
                 BatteryManager.EXTRA_HEALTH, BatteryManager.BATTERY_HEALTH_UNKNOWN)
                 == BatteryManager.BATTERY_HEALTH_OVERHEAT;
-
+		int bTemp = batteryBroadcast.getIntExtra(BatteryManager.EXTRA_TEMPERATURE, 0);
+		info.batteryTemp = (float) (bTemp / 10);
         info.statusLabel = Utils.getBatteryStatus(context, batteryBroadcast);
         if (!info.mCharging) {
             updateBatteryInfoDischarging(context, shortString, estimate, info);
