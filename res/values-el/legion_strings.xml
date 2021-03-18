@@ -106,8 +106,6 @@
     <string name="pattern_mm_mm_mm">mm-mm-mm</string>
     <string name="pattern_da_da_dzzz">da-da-dzzz</string>
     <string name="pattern_da_dzzz_da">da-dzzz-da</string>
-    <string name="pattern_custom">Άλλο</string>
-    <string name="custom_vibration_pattern_title">Επιλογή μοτίβου</string>
 
 
     <string name="update_settings_title">Ενημερώσεις LegionOS</string>
@@ -185,5 +183,19 @@
     <string name="adaptive_playback_timeout_5_min_summary">Ενεργή (5 λεπτά)</string>
     <string name="adaptive_playback_timeout_10_min">10 λεπτά</string>
     <string name="adaptive_playback_timeout_10_min_summary">Ενεργή (10 λεπτά)</string>
+	
+	<!-- DC Dimming -->
+    <string name="dc_dimming_title">Τριμάρισμα DC</string>
+    <string name="dc_dimming_info">Μειώνει την καταπόνηση των ματιών σε συνθήκες χαμηλού φωτισμού, αλλά μπορεί να οδηγήσει σε μειωμένη ποιότητα εικόνας και κακή παραγωγή χρώματος.</string>
+    <string name="dc_dimming_auto_mode_title">Πρόγραμμα</string>
+    <string name="dc_dimming_mode_brightness">Ενεργοποίηση όταν η φωτεινότητα είναι κάτω από το όριο</string>
+    <string name="dc_dimming_mode_full">Εξαρτάται από το χρόνο και τη φωτεινότητα</string>
+    <string name="dc_dimming_brightness_title">Όριο φωτεινότητας</string>
+    <string name="dc_dimming_brightness_disabled">Ανενεργό</string>
+    <string name="dc_dimming_restore_auto_mode">Επαναφορά αυτόματης λειτουργίας</string>
+    <string name="dc_dimming_brightness_info">Ενεργοποιήστε το τριμάρισμα DC μόνο όταν η μέση φωτεινότητα είναι κάτω από το όριο</string>
+    <string name="dc_dimming_off_auto_mode_auto">Θα ενεργοποιηθεί αυτόματα</string>
+    <string name="dc_dimming_on_auto_mode_auto">Θα απενεργοποιηθεί αυτόματα</string>
+    <string name="keywords_display_dc_dimming">dc dimming, flicker, eye, strain</string>
 
 </resources>
