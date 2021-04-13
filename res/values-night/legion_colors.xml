@@ -6,4 +6,6 @@
     <color name="legion_homepage_background">#ff000000</color>
     <color name="legion_homepage_icon_background">#ff202124</color>
 
+    <color name="settingsHeaderColor">@*android:color/accent_device_default_dark</color>
+
 </resources>

@@ -354,4 +354,8 @@
     <string name="bluetooth_timeout_summary_2hours">2 hours</string>
     <string name="bluetooth_timeout_summary_4hours">4 hours</string>
     <string name="bluetooth_timeout_summary_8hours">8 hours</string>
+
+    <!-- Battery saver -->
+    <string name="battery_saver_is_enabled">Battery saver is enabled</string>
+
 </resources>

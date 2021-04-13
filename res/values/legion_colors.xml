@@ -22,4 +22,7 @@
     <color name="legion_homepage_icon_tools_color">#e99092</color>
     <color name="legion_homepage_icon_google_color">#4285f4</color>
     <color name="legion_homepage_icon_wellbeing_color">#f06292</color>
+
+  <color name="settingsHeaderColor">@*android:color/accent_device_default_light</color>
+
 </resources>
