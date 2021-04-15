@@ -27,8 +27,7 @@
     <com.android.settings.slices.SlicePreference
         android:key="bt_nearby_slice"
         android:title="@string/summary_placeholder"
-        settings:controller="com.android.settings.slices.SlicePreferenceController"
-        settings:allowDividerBelow="true"/>
+        settings:controller="com.android.settings.slices.SlicePreferenceController"/>
 
     <PreferenceCategory
         android:key="available_device_list"
@@ -51,7 +50,6 @@
         android:icon="@drawable/ic_add_24dp"
         android:summary="@string/connected_device_add_device_summary"
         android:fragment="com.android.settings.bluetooth.BluetoothPairingDetail"
-        settings:allowDividerAbove="true"
         settings:keywords="@string/keywords_add_bt_device"
         settings:userRestriction="no_config_bluetooth"
         settings:useAdminDisabledSummary="true"
@@ -77,7 +75,6 @@
         android:title="@string/connected_device_connections_title"
         android:summary="@string/summary_placeholder"
         android:fragment="com.android.settings.connecteddevice.AdvancedConnectedDeviceDashboardFragment"
-        settings:allowDividerAbove="true"
         settings:controller="com.android.settings.connecteddevice.AdvancedConnectedDeviceController"/>
 
     <com.android.settingslib.widget.FooterPreference
