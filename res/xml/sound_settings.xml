@@ -117,6 +117,7 @@
     <ListPreference
         android:key="vibration_pattern"
         android:title="@string/vibration_pattern_title"
+        android:icon="@drawable/ic_ring_vibration"
         android:order="-125"
         android:entries="@array/vibration_pattern_entries"
         android:entryValues="@array/vibration_pattern_values"
