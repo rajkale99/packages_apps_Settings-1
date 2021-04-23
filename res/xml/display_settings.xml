@@ -159,6 +159,7 @@
 
     <SwitchPreference
         android:key="enable_blurs_on_windows"
+	android:icon="@drawable/ic_settings_blurs"
         android:title="@string/enable_blurs_on_windows_title"
         android:summary="@string/enable_blurs_on_windows_summary" />
 
@@ -174,7 +175,7 @@
 
     <com.android.settings.display.darkmode.DarkModePreference
         android:key="dark_ui_mode"
-	android:icon="@drawable/ic_settings_darkui"
+	android:icon="@drawable/ic_dark_theme"
         android:title="@string/dark_ui_mode"
         android:fragment="com.android.settings.display.darkmode.DarkModeSettingsFragment"
         android:widgetLayout="@null"
@@ -195,7 +196,7 @@
 
     <com.android.settings.display.ScreenZoomPreference
         android:key="display_settings_screen_zoom"
-        android:icon="@drawable/ic_screen_zoom"
+        android:icon="@drawable/ic_screen_density"
         android:title="@string/screen_zoom_title"
         android:fragment="com.android.settings.display.ScreenZoomSettings"
         settings:searchable="false"/>
