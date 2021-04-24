@@ -22,7 +22,7 @@
     android:layout_width="match_parent"
     android:layout_height="@dimen/homepage_spacer_height"
     android:outlineProvider="none"
-    app:cardBackgroundColor="@color/legion_homepage_background"
+    app:cardBackgroundColor="?android:attr/colorPrimary"
     app:layout_scrollFlags="scroll|enterAlwaysCollapsed">
 
     <TextView 
