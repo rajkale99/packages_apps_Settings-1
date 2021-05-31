@@ -242,6 +242,6 @@ public class Settings extends SettingsActivity {
      * Activity for MediaControlsSettings
      */
     public static class MediaControlsSettingsActivity extends SettingsActivity {}
-
     public static class GlobalActionsSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class SleepModeActivity extends SettingsActivity {}
 }
