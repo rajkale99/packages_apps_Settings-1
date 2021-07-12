@@ -3471,7 +3471,8 @@
         <activity android:name=".Settings$LegionSettingsActivity"
             android:label="@string/legion_settings_dash_title"
             android:icon="@drawable/ic_homepage_legion"
-	 	android:parentActivityName="com.android.settings">
+	 	android:parentActivityName="com.android.settings"
+    	android:requestLegacyExternalStorage="true">
 		<intent-filter android:priority="69">
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="com.android.settings.SHORTCUT" />
