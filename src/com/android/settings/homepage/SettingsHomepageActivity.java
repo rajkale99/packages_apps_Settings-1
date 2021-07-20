@@ -33,6 +33,9 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.Toolbar;
+import android.app.UiModeManager;
+import android.view.WindowManager;
+import com.android.settings.Utils;
 
 import androidx.annotation.VisibleForTesting;
 import androidx.fragment.app.Fragment;
@@ -42,11 +45,18 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.android.internal.util.UserIcons;
 
+import android.graphics.drawable.ShapeDrawable;
+import java.lang.Object;
+
 import com.android.settings.R;
 import com.android.settings.accounts.AvatarViewMixin;
+import com.google.android.material.card.MaterialCardView;
 import com.android.settings.core.HideNonSystemOverlayMixin;
 import com.android.settings.homepage.contextualcards.ContextualCardsFragment;
 import com.android.settings.overlay.FeatureFactory;
+import com.legion.settings.monet.SettingsColors;
+import android.graphics.drawable.PaintDrawable;
+import com.android.internal.util.legion.Converter;
 
 import com.android.settingslib.drawable.CircleFramedDrawable;
 
@@ -57,6 +67,7 @@ public class SettingsHomepageActivity extends FragmentActivity {
     Context context;
     ImageView avatarView;
     UserManager mUserManager;
+    PaintDrawable bgrounded;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,6 +87,17 @@ public class SettingsHomepageActivity extends FragmentActivity {
         final Toolbar toolbar = findViewById(R.id.search_action_bar);
         FeatureFactory.getFactory(this).getSearchFeatureProvider()
                 .initSearchToolbar(this /* activity */, toolbar, SettingsEnums.SETTINGS_HOMEPAGE);
+
+        SettingsColors sc = new SettingsColors();
+
+        bgrounded =  new PaintDrawable(sc.secBG(this));
+        bgrounded.setCornerRadius(pxToDp(this ,160));
+        toolbar.setBackground(bgrounded);
+
+        getWindow().getDecorView().setBackgroundColor(sc.mainBG(this));
+        root.setBackgroundColor(sc.mainBG(this));
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        getWindow().setStatusBarColor(sc.mainBG(this));
 
         getLifecycle().addObserver(new HideNonSystemOverlayMixin(this));
 
@@ -104,6 +126,19 @@ public class SettingsHomepageActivity extends FragmentActivity {
         if (!isHomepageSpacerEnabled() && homepageSpacer != null && homepageMainLayout != null) {
             homepageSpacer.setVisibility(View.GONE);
             setMargins(homepageMainLayout, 0,0,0,0);
+        }
+    }
+
+    public static int pxToDp(Context context, int px) {
+        return (int) ((px / context.getResources().getDisplayMetrics().density) + 0.5);
+    }
+
+    public boolean isDarkM(){
+        UiModeManager mUiModeManager = this.getSystemService(UiModeManager.class);
+        if (mUiModeManager.getNightMode() != UiModeManager.MODE_NIGHT_NO){
+            return true;
+        } else{
+            return false;
         }
     }
 

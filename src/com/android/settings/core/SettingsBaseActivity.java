@@ -35,6 +35,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.Toolbar;
+import com.legion.settings.monet.SettingsColors;
+import android.graphics.drawable.PaintDrawable;
+import android.view.WindowManager;
 
 import androidx.fragment.app.FragmentActivity;
 
@@ -66,6 +69,8 @@ public class SettingsBaseActivity extends FragmentActivity {
     private final PackageReceiver mPackageReceiver = new PackageReceiver();
     private final List<CategoryListener> mCategoryListeners = new ArrayList<>();
     private int mCategoriesUpdateTaskCount;
+    SettingsColors sc = new SettingsColors();
+    PaintDrawable bgrounded;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -92,6 +97,10 @@ public class SettingsBaseActivity extends FragmentActivity {
             toolbar.setVisibility(View.GONE);
             return;
         }
+
+        bgrounded =  new PaintDrawable(sc.mainBG(this));
+
+        toolbar.setBackground(bgrounded);
         setActionBar(toolbar);
 
         /*baseSpacer = findViewById(R.id.settings_submenu_spacer);
@@ -163,6 +172,12 @@ public class SettingsBaseActivity extends FragmentActivity {
             parent.removeAllViews();
         }
         LayoutInflater.from(this).inflate(layoutResID, parent);
+
+        getWindow().getDecorView().setBackgroundColor(sc.mainBG(this));
+        parent.setBackgroundColor(sc.mainBG(this));
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        getWindow().setStatusBarColor(sc.mainBG(this));
+
     }
 
     @Override
