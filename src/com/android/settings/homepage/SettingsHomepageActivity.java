@@ -65,7 +65,6 @@ public class SettingsHomepageActivity extends FragmentActivity {
     ImageView avatarView;
     UserManager mUserManager;
 
-    PaintDrawable bgrounded2;
     PaintDrawable bgrounded;
 
     @Override
@@ -125,11 +124,9 @@ public class SettingsHomepageActivity extends FragmentActivity {
             setMargins(homepageMainLayout, 0,0,0,0);
         }
     }
-        bgrounded2 =  new PaintDrawable(sc.secBG(this));
-        bgrounded2.setCornerRadius(pxToDp(this ,165));
-
         LinearLayout lnLayout = (LinearLayout) findViewById(R.id.homepage_container);
-        lnLayout.setBackground(bgrounded2);
+        Drawable background = lnLayout.getBackground();
+        background.setTint(sc.secBG(this));
 
     public static int pxToDp(Context context, int px) {
         return (int) ((px / context.getResources().getDisplayMetrics().density) + 0.5);
