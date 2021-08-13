@@ -192,6 +192,7 @@
         <!-- Vibrate on touch -->
         <SwitchPreference
           android:key="vibrate_on_touch"
+          settings:iconSpaceReserved="false"
           android:title="@string/vibrate_on_touch_title"
           android:summary="@string/vibrate_on_touch_summary"
           settings:keywords="@string/keywords_vibrate_on_touch"/>
@@ -199,52 +200,62 @@
         <!-- Dial pad tones -->
         <SwitchPreference
           android:key="dial_pad_tones"
+          settings:iconSpaceReserved="false"
           android:title="@string/dial_pad_tones_title"/>
 
         <!-- Screen locking sounds -->
         <SwitchPreference
           android:key="screen_locking_sounds"
+          settings:iconSpaceReserved="false"
           android:title="@string/screen_locking_sounds_title"/>
 
         <!-- Charging sounds -->
         <SwitchPreference
           android:key="charging_sounds"
+          settings:iconSpaceReserved="false"
           android:title="@string/charging_sounds_nos_title"/>
 
         <!-- Charging vibro -->
         <SwitchPreference
           android:key="charging_vibro"
+          settings:iconSpaceReserved="false"
           android:title="@string/charging_vibro_title" />
 
         <!-- Docking sounds -->
         <SwitchPreference
           android:key="docking_sounds"
+          settings:iconSpaceReserved="false"
           android:title="@string/docking_sounds_title"/>
 
         <!-- Touch sounds -->
         <SwitchPreference
           android:key="touch_sounds"
+          settings:iconSpaceReserved="false"
           android:title="@string/touch_sounds_title"/>
 
         <!-- Dock speaker plays -->
         <DropDownPreference
           android:key="dock_audio_media"
+          settings:iconSpaceReserved="false"
           android:title="@string/dock_audio_media_title"
           android:summary="%s"/>
 
         <!-- Boot sounds -->
         <SwitchPreference
           android:key="boot_sounds"
+          settings:iconSpaceReserved="false"
           android:title="@string/boot_sounds_title"/>
 
         <!-- Screenshot sounds -->
         <SwitchPreference
           android:key="screenshot_sounds"
+          settings:iconSpaceReserved="false"
           android:title="@string/screenshot_sound_title" />
 
         <!-- Emergency tone -->
         <DropDownPreference
           android:key="emergency_tone"
+          settings:iconSpaceReserved="false"
           android:title="@string/emergency_tone_title"
           android:summary="%s"/>
     </PreferenceCategory>
