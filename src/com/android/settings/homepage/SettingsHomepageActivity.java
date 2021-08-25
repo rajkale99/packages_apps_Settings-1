@@ -36,6 +36,7 @@ import android.widget.Toolbar;
 import android.app.UiModeManager;
 import android.view.WindowManager;
 import com.android.settings.Utils;
+import android.widget.LinearLayout;
 
 import androidx.annotation.VisibleForTesting;
 import androidx.fragment.app.Fragment;
@@ -45,9 +46,6 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.android.internal.util.UserIcons;
 
-import android.graphics.drawable.ShapeDrawable;
-import java.lang.Object;
-
 import com.android.settings.R;
 import com.android.settings.accounts.AvatarViewMixin;
 import com.google.android.material.card.MaterialCardView;
@@ -56,7 +54,6 @@ import com.android.settings.homepage.contextualcards.ContextualCardsFragment;
 import com.android.settings.overlay.FeatureFactory;
 import com.legion.settings.monet.SettingsColors;
 import android.graphics.drawable.PaintDrawable;
-import com.android.internal.util.legion.Converter;
 
 import com.android.settingslib.drawable.CircleFramedDrawable;
 
@@ -67,6 +64,8 @@ public class SettingsHomepageActivity extends FragmentActivity {
     Context context;
     ImageView avatarView;
     UserManager mUserManager;
+
+    PaintDrawable bgrounded2;
     PaintDrawable bgrounded;
 
     @Override
@@ -77,8 +76,6 @@ public class SettingsHomepageActivity extends FragmentActivity {
         final View root = findViewById(R.id.settings_homepage_container);
         root.setSystemUiVisibility(
                 View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
-
-        setHomepageContainerPaddingTop();
 
         Context context = getApplicationContext();
 
@@ -128,6 +125,11 @@ public class SettingsHomepageActivity extends FragmentActivity {
             setMargins(homepageMainLayout, 0,0,0,0);
         }
     }
+        bgrounded2 =  new PaintDrawable(sc.secBG(this));
+        bgrounded2.setCornerRadius(pxToDp(this ,165));
+
+        LinearLayout lnLayout = (LinearLayout) findViewById(R.id.homepage_container);
+        lnLayout.setBackground(bgrounded2);
 
     public static int pxToDp(Context context, int px) {
         return (int) ((px / context.getResources().getDisplayMetrics().density) + 0.5);
