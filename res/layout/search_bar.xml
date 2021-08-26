@@ -22,17 +22,11 @@
     style="@style/SearchBarStyle"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:cardElevation="3dp">
-    <ImageView
-        android:src="@drawable/cardview_search_background"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="fitXY"/>
+    app:cardCornerRadius="160dp">
     <Toolbar
         android:id="@+id/search_action_bar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/search_bar_height"
-        android:background="@drawable/search_bar_selected_background"
         android:contentInsetStartWithNavigation="@dimen/search_bar_content_inset"
         android:navigationIcon="@drawable/ic_homepage_search">
         <TextView

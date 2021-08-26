@@ -123,10 +123,11 @@ public class SettingsHomepageActivity extends FragmentActivity {
             homepageSpacer.setVisibility(View.GONE);
             setMargins(homepageMainLayout, 0,0,0,0);
         }
-    }
+
         LinearLayout lnLayout = (LinearLayout) findViewById(R.id.homepage_container);
         Drawable background = lnLayout.getBackground();
         background.setTint(sc.secBG(this));
+    }
 
     public static int pxToDp(Context context, int px) {
         return (int) ((px / context.getResources().getDisplayMetrics().density) + 0.5);
