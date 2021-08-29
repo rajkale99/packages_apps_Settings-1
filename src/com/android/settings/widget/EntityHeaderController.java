@@ -37,6 +37,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.legion.settings.monet.SettingsColors;
+import com.android.systemui.nezuko.MonetWatcher;
 
 import androidx.annotation.IntDef;
 import androidx.annotation.VisibleForTesting;
@@ -335,7 +336,12 @@ public class EntityHeaderController {
             return this;
         }
         actionBar.setBackgroundDrawable(
+	if (MonetWatcher.isMonetEnabled(context)) {
                 new ColorDrawable(sc.mainBG(activity)));
+	else
+	new ColorDrawable(Utils.getColorAttrDefaultColor(activity, android.R.attr.colorPrimaryDark)));
+	}
+
         actionBar.setElevation(0);
         if (mRecyclerView != null && mLifecycle != null) {
             ActionBarShadowController.attachToView(mActivity, mLifecycle, mRecyclerView);
