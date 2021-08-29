@@ -335,10 +335,11 @@ public class EntityHeaderController {
             Log.w(TAG, "No actionbar, cannot style actionbar.");
             return this;
         }
-        actionBar.setBackgroundDrawable(
 	if (MonetWatcher.isMonetEnabled(context)) {
+	actionBar.setBackgroundDrawable(
                 new ColorDrawable(sc.mainBG(activity)));
 	else
+	actionBar.setBackgroundDrawable(
 	new ColorDrawable(Utils.getColorAttrDefaultColor(activity, android.R.attr.colorPrimaryDark)));
 	}
 
