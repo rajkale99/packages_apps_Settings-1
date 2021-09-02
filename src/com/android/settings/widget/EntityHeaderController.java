@@ -23,6 +23,7 @@ import android.app.Activity;
 import android.app.settings.SettingsEnums;
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.MonetWannabe;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.graphics.drawable.ColorDrawable;
@@ -36,6 +37,7 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.provider.Settings;
 import com.legion.settings.monet.SettingsColors;
 
 import androidx.annotation.IntDef;
@@ -71,7 +73,7 @@ public class EntityHeaderController {
     public static final String PREF_KEY_APP_HEADER = "pref_app_header";
 
     private static final String TAG = "AppDetailFeature";
-
+    private Context mContext;
     private final Context mAppContext;
     private final Activity mActivity;
     private final Fragment mFragment;
@@ -334,8 +336,14 @@ public class EntityHeaderController {
             Log.w(TAG, "No actionbar, cannot style actionbar.");
             return this;
         }
+        if (MonetWannabe.isMonetEnabled(mContext)) {
         actionBar.setBackgroundDrawable(
                 new ColorDrawable(sc.mainBG(activity)));
+	} else {
+	actionBar.setBackgroundDrawable(
+		new ColorDrawable(Utils.getColorAttrDefaultColor(activity, android.R.attr.colorPrimaryDark)));
+	}
+
         actionBar.setElevation(0);
         if (mRecyclerView != null && mLifecycle != null) {
             ActionBarShadowController.attachToView(mActivity, mLifecycle, mRecyclerView);

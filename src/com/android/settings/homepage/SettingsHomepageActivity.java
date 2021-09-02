@@ -37,6 +37,7 @@ import android.app.UiModeManager;
 import android.view.WindowManager;
 import com.android.settings.Utils;
 import android.widget.LinearLayout;
+import android.content.res.MonetWannabe;
 
 import androidx.annotation.VisibleForTesting;
 import androidx.fragment.app.Fragment;
@@ -66,6 +67,7 @@ public class SettingsHomepageActivity extends FragmentActivity {
     UserManager mUserManager;
 
     PaintDrawable bgrounded;
+	private Context mContext
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -86,6 +88,7 @@ public class SettingsHomepageActivity extends FragmentActivity {
 
         SettingsColors sc = new SettingsColors();
 
+	if (MonetWannabe.isMonetEnabled(mContext)) {
         bgrounded =  new PaintDrawable(sc.secBG(this));
         bgrounded.setCornerRadius(pxToDp(this ,160));
         toolbar.setBackground(bgrounded);
@@ -94,6 +97,7 @@ public class SettingsHomepageActivity extends FragmentActivity {
         root.setBackgroundColor(sc.mainBG(this));
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         getWindow().setStatusBarColor(sc.mainBG(this));
+	}
 
         getLifecycle().addObserver(new HideNonSystemOverlayMixin(this));
 
@@ -123,10 +127,11 @@ public class SettingsHomepageActivity extends FragmentActivity {
             homepageSpacer.setVisibility(View.GONE);
             setMargins(homepageMainLayout, 0,0,0,0);
         }
-
+	if (MonetWannabe.isMonetEnabled(mContext)) {
         LinearLayout lnLayout = (LinearLayout) findViewById(R.id.homepage_container);
         Drawable background = lnLayout.getBackground();
         background.setTint(sc.secBG(this));
+	}
     }
 
     public static int pxToDp(Context context, int px) {

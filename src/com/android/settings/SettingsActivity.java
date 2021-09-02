@@ -70,6 +70,8 @@ import com.android.settingslib.drawer.DashboardCategory;
 import com.legion.settings.monet.SettingsColors;
 import android.graphics.drawable.PaintDrawable;
 import android.view.WindowManager;
+import android.content.res.MonetWannabe;
+
 import com.google.android.setupcompat.util.WizardManagerHelper;
 
 import java.util.ArrayList;
@@ -82,6 +84,7 @@ public class SettingsActivity extends SettingsBaseActivity
         ButtonBarHandler, FragmentManager.OnBackStackChangedListener {
 
     private static final String LOG_TAG = "SettingsActivity";
+    private Context mContext;
     SettingsColors sc = new SettingsColors();
 
     // Constants for state save/restore
@@ -292,8 +295,10 @@ public class SettingsActivity extends SettingsBaseActivity
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(!isInSetupWizard);
             actionBar.setHomeButtonEnabled(!isInSetupWizard);
+	if (MonetWannabe.isMonetEnabled(mContext)) {
             getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
             getWindow().setStatusBarColor(sc.mainBG(this));
+	}
             actionBar.setDisplayShowTitleEnabled(true);
         }
         mSwitchBar = findViewById(R.id.switch_bar);

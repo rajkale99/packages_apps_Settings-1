@@ -38,6 +38,8 @@ import android.widget.Toolbar;
 import com.legion.settings.monet.SettingsColors;
 import android.graphics.drawable.PaintDrawable;
 import android.view.WindowManager;
+import android.content.res.MonetWannabe;
+import android.provider.Settings;
 
 import androidx.fragment.app.FragmentActivity;
 
@@ -59,6 +61,7 @@ public class SettingsBaseActivity extends FragmentActivity {
     private static final String TAG = "SettingsBaseActivity";
     private static final String DATA_SCHEME_PKG = "package";
 
+    private Context mContext;
     //View baseSpacer;
     //View baseMainLayout;
 
@@ -98,9 +101,11 @@ public class SettingsBaseActivity extends FragmentActivity {
             return;
         }
 
+	if (MonetWannabe.isMonetEnabled(mContext)) {
         bgrounded =  new PaintDrawable(sc.mainBG(this));
 
         toolbar.setBackground(bgrounded);
+	}
         setActionBar(toolbar);
 
         /*baseSpacer = findViewById(R.id.settings_submenu_spacer);
@@ -173,11 +178,12 @@ public class SettingsBaseActivity extends FragmentActivity {
         }
         LayoutInflater.from(this).inflate(layoutResID, parent);
 
+	if (MonetWannabe.isMonetEnabled(mContext)) {
         getWindow().getDecorView().setBackgroundColor(sc.mainBG(this));
         parent.setBackgroundColor(sc.mainBG(this));
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         getWindow().setStatusBarColor(sc.mainBG(this));
-
+	}
     }
 
     @Override
