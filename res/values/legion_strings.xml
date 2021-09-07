@@ -314,9 +314,6 @@
     <string name="small_label">1 dp</string>
     <string name="big_label">4 dp</string>
 
-	<!-- Themes customisation -->
-    <string name="theme_customization_systemui_title">System themes</string>
-
     <!--  screen, setting option name to change wifi timeout -->
     <string name="wifi_timeout">Turn off Wi-Fi automatically</string>
 
@@ -357,5 +354,4 @@
 
     <!-- Battery saver -->
     <string name="battery_saver_is_enabled">Battery saver is enabled</string>
-
 </resources>
