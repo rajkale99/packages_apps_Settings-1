@@ -22,7 +22,6 @@
 
     <SwitchPreference
         android:key="media_controls_resume_switch"
-        settings:iconSpaceReserved="false"
         android:title="@string/media_controls_summary"
         android:summary="@string/media_controls_resume_description"
         app:keywords="@string/keywords_media_controls"

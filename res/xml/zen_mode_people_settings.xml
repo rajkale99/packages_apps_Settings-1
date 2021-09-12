@@ -33,7 +33,6 @@
 
       <Preference
           android:key="zen_mode_conversations"
-          settings:iconSpaceReserved="false"
           android:title="@string/zen_mode_conversations_title"
           android:fragment="com.android.settings.notification.zen.ZenModeConversationsSettings"/>
    </PreferenceCategory>
@@ -45,13 +44,11 @@
 
       <Preference
           android:key="zen_mode_people_calls"
-          settings:iconSpaceReserved="false"
           android:title="@string/zen_mode_calls_title"
           android:fragment="com.android.settings.notification.zen.ZenModeCallsSettings"/>
 
       <Preference
           android:key="zen_mode_people_messages"
-          settings:iconSpaceReserved="false"
           android:title="@string/zen_mode_messages_title"
           android:fragment="com.android.settings.notification.zen.ZenModeMessagesSettings"/>
    </PreferenceCategory>
