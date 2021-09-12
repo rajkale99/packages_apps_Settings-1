@@ -34,6 +34,7 @@
         android:persistent="false" />
     <Preference
         android:key="sim_status"
+        settings:iconSpaceReserved="false"
         android:title="@string/sim_status_title"
         android:persistent="false">
         <intent
@@ -42,6 +43,7 @@
     </Preference>
     <Preference
         android:key="imei_info"
+        settings:iconSpaceReserved="false"
         android:title="@string/imei_information_title"
         android:persistent="false">
         <intent

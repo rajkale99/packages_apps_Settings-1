@@ -26,28 +26,33 @@
         <!-- Alarms -->
         <SwitchPreference
             android:key="zen_mode_alarms"
+            settings:iconSpaceReserved="false"
             android:title="@string/zen_mode_alarms"/>
 
         <!-- Media -->
         <SwitchPreference
             android:key="zen_mode_media"
+            settings:iconSpaceReserved="false"
             android:title="@string/zen_mode_media"
             android:summary="@string/zen_mode_media_summary"/>
 
         <!-- System -->
         <SwitchPreference
             android:key="zen_mode_system"
+            settings:iconSpaceReserved="false"
             android:title="@string/zen_mode_system"
             android:summary="@string/zen_mode_system_summary"/>
 
         <!-- Reminders -->
         <SwitchPreference
             android:key="zen_mode_reminders"
+            settings:iconSpaceReserved="false"
             android:title="@string/zen_mode_reminders"/>
 
         <!-- Events -->
         <SwitchPreference
             android:key="zen_mode_events"
+            settings:iconSpaceReserved="false"
             android:title="@string/zen_mode_events"/>
 
     </PreferenceCategory>

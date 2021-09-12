@@ -24,6 +24,7 @@
 <!-- SIM status -->
     <Preference
         android:key="sim_status"
+        settings:iconSpaceReserved="false"
         android:order="8"
         android:title="@string/sim_status_title"
         settings:keywords="@string/keywords_sim_status"
@@ -33,6 +34,7 @@
     <!-- IMEI -->
     <Preference
         android:key="imei_info"
+        settings:iconSpaceReserved="false"
         android:order="9"
         android:title="@string/status_imei"
         android:summary="@string/summary_placeholder"
@@ -43,6 +45,7 @@
     <!-- Model -->
     <Preference
         android:key="hardware_info_device_model"
+        settings:iconSpaceReserved="false"
         android:title="@string/model_info"
         android:summary="@string/summary_placeholder"
         android:selectable="false"
@@ -52,6 +55,7 @@
     <!-- Platform -->
     <Preference
         android:key="hardware_info_platform"
+        settings:iconSpaceReserved="false"
         android:title="@string/platform_revision"
         android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.deviceinfo.hardwareinfo.PlatformRevisionPreferenceController"
@@ -60,6 +64,7 @@
     <!-- Total RAM -->
     <Preference
         android:key="hardware_info_ram"
+        settings:iconSpaceReserved="false"
         android:title="@string/total_ram"
         android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.deviceinfo.hardwareinfo.TotalRAMPreferenceController"
@@ -68,6 +73,7 @@
     <!-- SerialNumber -->
     <Preference
         android:key="hardware_info_device_serial"
+        settings:iconSpaceReserved="false"
         android:title="@string/status_serial_number"
         android:summary="@string/summary_placeholder"
         android:selectable="false"
@@ -77,6 +83,7 @@
     <!-- Hardware revision -->
     <Preference
         android:key="hardware_info_device_revision"
+        settings:iconSpaceReserved="false"
         android:title="@string/hardware_revision"
         android:summary="@string/summary_placeholder"
         android:selectable="false"
