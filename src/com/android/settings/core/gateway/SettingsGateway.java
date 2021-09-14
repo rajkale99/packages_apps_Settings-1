@@ -164,7 +164,7 @@ import com.android.settings.wifi.tether.WifiTetherSettings;
 
 import com.legion.settings.LegionSettings;
 import com.legion.settings.fragments.GlobalActionsSettings;
-import com.legion.settings..fragments.SleepMode;
+import com.legion.settings.fragments.SleepMode;
 
 public class SettingsGateway {
 
