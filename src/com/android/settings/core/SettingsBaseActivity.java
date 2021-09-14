@@ -55,9 +55,10 @@ import java.util.Set;
 
 public class SettingsBaseActivity extends FragmentActivity {
 
-    protected static final boolean DEBUG_TIMING = false;
+    protected static final boolean DEBUG_TIMING = true;
     private static final String TAG = "SettingsBaseActivity";
     private static final String DATA_SCHEME_PKG = "package";
+    final long startTime = System.currentTimeMillis();
 
     //View baseSpacer;
     //View baseMainLayout;
@@ -69,7 +70,6 @@ public class SettingsBaseActivity extends FragmentActivity {
     private final PackageReceiver mPackageReceiver = new PackageReceiver();
     private final List<CategoryListener> mCategoryListeners = new ArrayList<>();
     private int mCategoriesUpdateTaskCount;
-    SettingsColors sc = new SettingsColors();
     PaintDrawable bgrounded;
 
     @Override
@@ -79,7 +79,6 @@ public class SettingsBaseActivity extends FragmentActivity {
             Log.w(TAG, "Devices lock task mode pinned.");
             finish();
         }
-        final long startTime = System.currentTimeMillis();
         getLifecycle().addObserver(new HideNonSystemOverlayMixin(this));
 
         final TypedArray theme = getTheme().obtainStyledAttributes(android.R.styleable.Theme);
@@ -98,6 +97,7 @@ public class SettingsBaseActivity extends FragmentActivity {
             return;
         }
 
+        SettingsColors sc = new SettingsColors(this);
         bgrounded =  new PaintDrawable(sc.mainBG(this));
 
         toolbar.setBackground(bgrounded);
@@ -111,10 +111,6 @@ public class SettingsBaseActivity extends FragmentActivity {
             setMargins(baseMainLayout, 0,getResources().getDimensionPixelSize(R.dimen.homepage_spacer_off_margin),0,0);
         } */
 
-        if (DEBUG_TIMING) {
-            Log.d(TAG, "onCreate took " + (System.currentTimeMillis() - startTime)
-                    + " ms");
-        }
     }
 
     /*private boolean isBaseSpacerEnabled() {
@@ -172,7 +168,7 @@ public class SettingsBaseActivity extends FragmentActivity {
             parent.removeAllViews();
         }
         LayoutInflater.from(this).inflate(layoutResID, parent);
-
+        SettingsColors sc = new SettingsColors(this);
         getWindow().getDecorView().setBackgroundColor(sc.mainBG(this));
         parent.setBackgroundColor(sc.mainBG(this));
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);

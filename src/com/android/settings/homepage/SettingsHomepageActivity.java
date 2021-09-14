@@ -37,6 +37,7 @@ import android.app.UiModeManager;
 import android.view.WindowManager;
 import com.android.settings.Utils;
 import android.widget.LinearLayout;
+import android.util.Log;
 
 import androidx.annotation.VisibleForTesting;
 import androidx.fragment.app.Fragment;
@@ -67,6 +68,9 @@ public class SettingsHomepageActivity extends FragmentActivity {
 
     PaintDrawable bgrounded;
 
+    final long startTime = System.currentTimeMillis();
+    private static final String LOG_TAG = "SettingsHomepageActivity";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -84,7 +88,7 @@ public class SettingsHomepageActivity extends FragmentActivity {
         FeatureFactory.getFactory(this).getSearchFeatureProvider()
                 .initSearchToolbar(this /* activity */, toolbar, SettingsEnums.SETTINGS_HOMEPAGE);
 
-        SettingsColors sc = new SettingsColors();
+        SettingsColors sc = new SettingsColors(this);
 
         bgrounded =  new PaintDrawable(sc.secBG(this));
         bgrounded.setCornerRadius(pxToDp(this ,160));
