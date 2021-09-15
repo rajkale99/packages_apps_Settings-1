@@ -306,9 +306,6 @@
     <string name="theme_customization_font_title">Κεφαλίδα / Φόντο σώματος</string>
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher and quick settings icons). -->
     <string name="theme_customization_icon_shape_title">Σχήμα εικονιδίου</string>
-	
-    <!-- Themes customisation -->
-    <string name="theme_customization_systemui_title">Θέματα συστήματος</string>
 
     <!--  screen, setting option name to change wifi timeout -->
     <string name="wifi_timeout">Χρονικό όριο λήξης Wi-Fi</string>
