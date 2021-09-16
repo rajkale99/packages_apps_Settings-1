@@ -22,6 +22,7 @@
     <com.android.settingslib.widget.LayoutPreference
         android:key="adaptive_connectivity_header"
         android:layout="@layout/adaptive_connectivity_header"
+        style="@style/EntityHeader1"
         android:persistent="false"
         android:selectable="false"
         android:title="@string/summary_placeholder"

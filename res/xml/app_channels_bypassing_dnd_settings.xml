@@ -19,6 +19,7 @@
     android:title="@string/zen_mode_settings_title">
     <com.android.settingslib.widget.LayoutPreference
         android:key="pref_app_header"
+        style="@style/EntityHeader1"
         android:layout="@layout/settings_entity_header" />
 
     <PreferenceCategory

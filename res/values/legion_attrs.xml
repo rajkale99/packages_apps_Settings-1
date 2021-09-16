@@ -14,6 +14,7 @@
      limitations under the License.
 -->
 <resources>
+    <attr name="maxLines" format="integer|reference"/>
     <!-- Interval seekbar -->
     <declare-styleable name="IntervalSeekBar">
         <attr name="minI" format="float" />
@@ -21,4 +22,5 @@
         <attr name="defaultValuePure" format="float" />
         <attr name="digits" format="integer" />
     </declare-styleable>
+        <attr name="maxLine" format="integer" />
 </resources>

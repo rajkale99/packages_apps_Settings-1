@@ -33,6 +33,7 @@
     <com.android.settingslib.widget.LayoutPreference
         android:key="recent_open_apps"
         android:title="@string/recent_app_category_title"
+        style="@style/EntityHeader1"
         android:layout="@layout/app_entities_header"
         android:selectable="false"
         android:order="-998"

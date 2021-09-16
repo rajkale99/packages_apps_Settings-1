@@ -28,6 +28,7 @@
 
     <com.android.settingslib.widget.LayoutPreference
         android:key="gesture_adaptive_playback_switch"
+        style="@style/EntityHeader1"
         android:layout="@layout/styled_switch_bar" />
 
     <PreferenceCategory

@@ -23,6 +23,7 @@
         android:key="account_header"
         android:layout="@layout/settings_entity_header"
         android:selectable="false"
+        style="@style/EntityHeader1"
         android:order="-10000"/>
 
     <PreferenceCategory

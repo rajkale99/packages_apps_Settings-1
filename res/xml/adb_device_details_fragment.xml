@@ -21,6 +21,7 @@
 
     <com.android.settingslib.widget.LayoutPreference
         android:key="adb_device_header"
+        style="@style/EntityHeader1"
         android:layout="@layout/settings_entity_header"
         android:selectable="false" />
 

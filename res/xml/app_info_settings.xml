@@ -30,6 +30,7 @@
     <com.android.settingslib.widget.LayoutPreference
         android:key="instant_app_buttons"
         android:layout="@layout/instant_app_buttons"
+        style="@style/EntityHeader1"
         android:selectable="false"
         android:order="-9999"
         settings:allowDividerAbove="true"

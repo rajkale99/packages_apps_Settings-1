@@ -22,6 +22,7 @@
     <com.android.settingslib.widget.LayoutPreference
         android:key="accessibility_autoclick_preview"
         android:layout="@layout/accessibility_autoclick_preview"
+        style="@style/EntityHeader1"
         android:persistent="false"
         android:selectable="false"
         android:title="@string/summary_placeholder"
